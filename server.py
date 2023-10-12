@@ -6,3 +6,8 @@ print(__name__)
 @app.route('/')
 def my_home():
     return render_template('index.html')
+
+
+@app.route('/submit_form', methods=['POST', 'GET'])
+def submit_form():
+    return 'form submitted hoorayyy!'
