@@ -42,7 +42,7 @@
 						<!-- One -->
 							<section id="one">
 								<div class="image main" data-position="center">
-									<img style="object-fit:fill" src="../static/images/banner.png" alt="" />
+									<img style="object-fit: fill" src="../static/images/banner.png" alt="" />
 								</div>
 								<div class="container">
 									<header class="major">
@@ -88,36 +88,45 @@
 									<h3>Recent Projects</h3>
 									<p>Step into the realm of practical AI applications with my latest work.</p>
 									<div class="features">
-										<article>
-											<a href="#" class="image"><img src="../static/images/pic01.png" alt="" /></a>
+										<div>
+											<a href="https://github.com/peacebefore/snoop/blob/main/README.md" class="image"><img src="../static/images/pic01.png" alt="" style='margin: auto; width: 50%;'/></a>
+											<br />
 											<div class="inner">
+												<br />
 												<h4>Snoop, the Dog Breed Checker</h4>
 												<h5>Purpose of the Project</h5>
+												<p></p>
 												<h5>Technologies Used</h5>
+												<p></p>
 												<h5>Obstacles & Challenges</h5>
-												<h5>Outcomes</h5>
+												<p></p>
+												<h5>Potential Improvements</h5>
+												<ul>
+													<li>Tune-ups: Further tune the model to reduce possibility of overfitting, or try training on a different multi-classification model from TensorFlow Hub.</li>
+													<li>UI: Create a user-friendly UI using Streamlit so users can upload their images and view the dog breed.</li>
+													<li>Cleaner code: Refactor the code to improve functionalization.</li>
+												</ul>
 											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="../static/images/pic02.png" alt="" /></a>
+										</div>
+										<div>
+											<a href="https://github.com/peacebefore/qa-app/blob/main/README.md" class="image"><img src="../static/images/pic02.png" alt="" style='margin: auto; width: 50%;'/></a>
 											<div class="inner">
+												<br />
 												<h4>SparkNotes & ChatGPT Walk into a Bar</h4>
 												<h5>Purpose of the Project</h5>
+												<p>This project allows users to interact with the trained ChatGPT-3.5-Turbo LLM model by uploading their own files, setting the chunk size and k parameters, and asking questions about the uploaded file in a conversational manner. The chat history is retained as long as the parameters and file remain unchanged.</p>
 												<h5>Technologies Used</h5>
+												<p>Python, Langchain, OpenAI, Streamlit, Vector Embeddings & Vector Store, Chroma / Pinecone</p>
 												<h5>Obstacles & Challenges</h5>
-												<h5>Outcomes</h5>
+												<p>The biggest challenge occurred after deploying the app on Streamlit. Although the development version worked without any issues, the deployed version has been throwing an error related to the pysqlite3 package version, which I'm currently debugging. Another issue is that an OpenAI API key is required to run the app, which involves the user (or myself) paying for each chat conversation.</p>
+												<h5>Potential Improvements</h5>
+												<ul>
+													<li>Package maintenance: There will need to be a better way to maintain packages in an appropriate version for Streamlit and Python.</li>
+													<li>Additional parameters: Users could select which ChatGPT version they want to use as a dropdown menu.</li>
+													<li>Chat history: Add the option to save or copy the chat history text; also add a warning that the history will disappear once the parameters or file is changed.</li>
+												</ul>
 											</div>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="../static/images/pic03.png" alt="" /></a>
-											<div class="inner">
-												<h4>Flicks & Picks Analytics</h4>
-												<h5>Purpose of the Project</h5>
-												<h5>Technologies Used</h5>
-												<h5>Obstacles & Challenges</h5>
-												<h5>Outcomes</h5>
-											</div>
-										</article>
+										</div>
 									</div>
 								</div>
 							</section>
